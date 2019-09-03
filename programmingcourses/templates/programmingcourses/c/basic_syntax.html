@@ -1,0 +1,72 @@
+{% extends 'programmingcourses/layout.html' %}
+
+{% block title %}C++{% endblock %}
+
+{% block body %}
+<div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1">
+    <h1>Basic Syntax in C Programming</h1>
+    <br>
+    <p>In this section, let see basic syntax rules that we need to follow while writing a C program. It mainly composed with tokens, identifiers, keywords, semicolons, comments and whitespaces.</p>
+    <br>
+    <h2>Tokens</h2>
+    <br>
+    <p>All identifiers, keywords, symbols, literals etc are together known as tokens. For example, printf, curly braces ({,}), round braces ((,)), semicolon (;), any string statements inside printf or code are known as tokens.</p>
+    <br>
+    <div style="background-color:white;">
+        <code>
+            printf (“Enter the name :”);
+        </code>
+    </div>
+    <br>
+    <p>Here printf, ‘(‘, ‘Enter the name:’, ‘)’ and ‘;’ are the tokens.</p>
+    <br>
+    <h2>Identifiers</h2>
+    <br>
+    <p>These are the variable names, function names or any other user defined names within the program. Standard format for any identifier name is to begin with alphabets (upper or lower case) or underscore (_). It is then followed by any alphabets (upper or lower case) or digits. But it does not allow ‘@’, ‘$’ and ‘%’ to be used within the identifier. C identifiers are case sensitive.</p>
+    <br>
+    <div style="background-color:white;">
+        <code>
+Var1, var2, _sum, str_name, strName, fltValue, intNumValue, avg_std_100
+        </code>
+    </div>
+    <br>
+    <br>
+    <h2>Keywords</h2>
+    <br>
+    <p>These are the reserved words in C, which are used to identify the variables or perform some functions within the program. For example, printf, scanf, if, else, for, while, loop, switch, int, float, char, double, struct, const, goto, return, typedef etc.</p>
+    <br>
+    <br>
+    <h2>Semicolons</h2>
+    <br>
+    <p>All codes in C have to be terminated by semicolon. It indicates the end of the line of the code.</p>
+    <br>
+    <div style="background-color:white;">
+        <code>
+            printf (“Enter the name :”);<br>
+            getchar ();<br>
+            return 0;<br>
+        </code>
+    </div>
+    <br><br>
+    <h2>Comments</h2>
+    <p>Comments are the non-compliable lines of code in the program. They are used to give the information about the code. When compiler encounters comments, it ignores those lines and proceeds with next compliable code. In C comments are written within ‘/*’ and ‘*/’ for multiline comments and single line comments are written after ‘//’.
+    <br>
+        <br>
+        /* defines an equivalent notation for ‘=’ as ‘EQ’.
+<br>Whenever the compiler sees EQ in the code, it replaces it by ‘=’*/
+<br><br>
+// defines an equivalent notation for ‘=’ as ‘EQ’.</p>
+    <br>
+    <br>
+    <h2>Whitespaces</h2>
+    <br>
+    <p>Whitespaces are used to separate two identifiers, keywords, any tokens or to have blank line, new line etc. It differentiates the any tokens from other while compiling and when user sees the code</p>
+    <br>
+    <div style="background-color:white;">
+        <code>
+            printf (“Enter the name :”);<br>
+            sum = var1 + var2;
+        </code>
+    </div>
+</div>
+{% endblock %}

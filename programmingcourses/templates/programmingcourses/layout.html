@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %} - Programmer's Junction</title>
+  <link href="{% static 'programmingcourses/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'programmingcourses/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="margin: 0px; background-color: #d9d9d9">
+  <div class="container-fluid">
+	<div class="jumbotron" >
+		<a style="text-decoration:none;" href="index"><h2 class="logo h2">Programmer's<span class="logo_second"> Junction</span></h2></a>
+	</div>
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="index"><span class="menu"></span> Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="index"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-stats"></span> Our Courses <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="c">C</a></li>
+            <li><a href="cpp">C++</a></li>
+            <li><a href="java">Java</a></li>
+            <li><a href="python">Python</a></li>
+            <li><a href="html">HTML</a></li>
+            <li><a href="css">CSS</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus"><span class="glyphicon glyphicon-user"></span> About Us</a></li>
+        <li><a href="contactus"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
+      </ul>
+     <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+
+      {% block body %}
+      {% endblock %}
+
+      <br>
+    	<footer>
+    		<div class="container">
+    			<div class="row">
+    				<div class="text-center col-lg-4 col-lg-offset-4">
+    					<a style="font-size: 50px; color: #333333 ;padding:0px 10px 0px 10px;" class="fa fa-facebook-square" href="#"></a>
+    					<a style="font-size: 50px;color: #333333;padding:0px 10px 0px 10px;" class="fa fa-twitter-square" href="#"></a>
+    					<a style="font-size: 50px;color: #333333;padding:0px 10px 0px 10px;" class="fa fa-github-square" href="https://github.com/dheerajk7" target="_blank"></a>
+    					<a style="font-size: 50px;color: #333333;padding:0px 10px 0px 10px;" class="fa fa-linkedin-square" href="#"></a>
+    					<br>
+    					<br>
+    					<div class="text-center">
+    					<p class="text-center copyright text-muted" style="color: #333333; font-weight: bold;">Developed by Programmer's Junctions Team</p>
+          <p class="text-center copyright text-muted" style="color: #333333;font-weight: bold;">Copyright &copy; Programmer's Junction</p>
+    				</div>
+    				</div>
+    			</div>
+    		</div>
+  </footer>
+  <br>
+</div>
+<script src="{% static 'programmingcourses/bootstrap/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'programmingcourses/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

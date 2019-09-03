@@ -1,0 +1,35 @@
+{% extends 'programmingcourses/layout.html' %}
+
+{% block title %}C++{% endblock %}
+
+{% block body %}
+<div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1">
+    <h1>Python – Environment Setup</h1>
+    <br>
+    <br>
+    <h2>Getting Python:</h2>
+    <p class="text_justify">The most up-to-date and current source code, binaries, documentation, news, etc., is available on the official website of Python https://www.python.org/
+<br>You can download Python documentation from https://www.python.org/doc/. The documentation is available in HTML, PDF, and PostScript formats.</p>
+    <br>
+    <br>
+    <h2>Installing Python :</h2>
+    <p>Python distribution is available for a wide variety of platforms. You need to download only the binary code applicable for your platform and install Python.
+<br>If the binary code for your platform is not available, you need a C compiler to compile the source code manually. Compiling the source code offers more flexibility in terms of choice of features that you require in your installation.
+<br>Here is a quick overview of installing Python on various platforms −</p>
+    <br>
+    <br>
+    <h2>Windows Installation :</h2>
+    <p class="text-justify">Here are the steps to install Python on Windows machine.
+<br>Open a Web browser and go to https://www.python.org/downloads/.
+<br>Follow the link for the Windows installer python-XYZ.msi file where XYZ is the version you need to install.
+<br>To use this installer python-XYZ.msi, the Windows system must support Microsoft Installer 2.0. Save the installer file to your local machine and then run it to find out if your machine supports MSI.
+<br>Run the downloaded file. This brings up the Python install wizard, which is really easy to use. Just accept the default settings, wait until the install is finished, and you are done.</p>
+    <br>
+    <br>
+    <h2>Setting up PATH :</h2>
+    <p class="text-justified">Programs and other executable files can be in many directories, so operating systems provide a search path that lists the directories that the OS searches for executables.
+<br>The path is stored in an environment variable, which is a named string maintained by the operating system. This variable contains information available to the command shell and other programs.
+<br>The path variable is named as PATH in Unix or Path in Windows (Unix is case sensitive; Windows is not).
+<br>In Mac OS, the installer handles the path details. To invoke the Python interpreter from any particular directory, you must add the Python directory to your path.</p>
+</div>
+{% endblock %}

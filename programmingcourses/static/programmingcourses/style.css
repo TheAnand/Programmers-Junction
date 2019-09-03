@@ -1,0 +1,111 @@
+.container-fluid
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 50px;
+    border-radius: 0px;
+}
+
+.logo
+{
+	font-size: 40px;
+	color: #00ff99;
+}
+
+.logo_second
+{
+	color: #ff8888;
+}
+
+
+.jumbotron
+{
+	background-image:url('header2.jpg');
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 0px; 
+}
+
+.contactus-heading
+{
+    color:#e6e6e6;
+	background-color:#663300;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 0px;
+}
+
+.menu
+{
+	margin-left: 15px;
+}
+
+.img
+{
+	width: 100%;
+	height: auto;
+}
+
+
+.navbar
+{
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+.navbar-inverse {
+    background-color: #262626;
+    border-color: #262626;
+}
+
+.well
+{
+	margin: 0px;
+	padding: 40px;
+	background-color: #d9d9d9;
+	color: #b34700;
+	font-weight: bolder;
+}
+
+.right_column
+{
+	padding-left: 0px;
+}
+
+.left_column
+{
+	padding-right: 0px;
+}
+
+.carousel
+{
+	margin: 0px;
+}
+.row.content
+{
+	margin: 0px;
+	height: 300px;
+	background-color: #d9d9d9;
+}
+
+.panel-default>.panel-heading
+{
+    size:30px;
+    padding:30px;
+}
+.panel-title {
+    font-size: 20px;
+}
+
+code
+{
+    background-color:white;
+}
+body
+{
+font-size:18px;
+}

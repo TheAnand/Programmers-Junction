@@ -1,0 +1,54 @@
+{% extends 'programmingcourses/layout.html' %}
+
+{% block title %}Contact Us{% endblock %}
+{% block body %}
+{% load static %}
+
+<div class="container-fluid">
+	<div class="contactus-heading" >
+		<h1 class="text-center">Contact Us</h1>
+        <p style="font-size:20px;" class="text-center">Just communicate with us and we will assist you</p>
+	</div>
+    <div class="col-lg-6 col-md-6">
+        <div style="margin:30px;" class="col-lg-10 col-lg-offset-1">
+            <h4>You will be contacted by us once we receive your enquiry details.</h4>
+            <form action="/programmingcourses/contactus" method="POST">{% csrf_token %}
+                <br>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" name="name" placeholder="Name" id="name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+  </div>
+                <div class="form-group">
+    <label for="email">Mobile Number:</label>
+    <input type="number" class="form-control" name="mobile_number" placeholder="Mobile Number" id="mobileno">
+  </div>
+                <div class="form-group">
+    <label for="text">Your Message:</label>
+                    <textarea type="text" rows="5" name="message" class="form-control" placeholder="Write Here..." id="msg"></textarea>
+  </div>
+                <br>
+  <div class="text-center">
+    <div class="text-center col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-xs-3 col-xs-offset-3 col-sm-offset-3 ">
+  <button type="submit" class="btn btn-success">Submit</button>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <button type="reset" class="btn btn-warning">Reset</button>
+</div>
+<br>
+</div>
+</form>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6">
+        <div class="col-lg-10 col-lg-offset-1 hidden-xs hidden-sm" style="margin-top:100px;">
+            <img class="img img-responsive" src="{% static 'programmingcourses/contact.png' %}" alt="Photo1">
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

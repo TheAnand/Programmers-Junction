@@ -1,0 +1,47 @@
+{% extends 'programmingcourses/layout.html' %}
+
+{% block title %}C++{% endblock %}
+
+{% block body %}
+<div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1">
+    <h1>Decision Making in C</h1>
+    <br>
+    <p>Decision making statements in programming languages decides the direction of flow of program execution. Decision making statements available in C++ are:</p>
+    <br>
+    <h2>if statement</h2>
+    <br>
+    <p>if statement is the most simple decision making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.
+<br><br>Syntax:</p>
+    <br>
+    <div style="background-color:white;">
+        <code>
+            if(condition) <br>
+{<br>
+   // Statements to execute if<br>
+   // condition is true<br>
+}<br>
+        </code>
+    </div>
+<br>
+    <h2>if- else</h2><br>
+    <p>The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false.
+    <br>
+    <br>Syntax :</p>
+    <br>
+    <div style="background-color:white;">
+        <code>
+        if (condition)<br>
+{<br>
+    // Executes this block if<br>
+    // condition is true<br>
+}<br>
+else<br>
+{<br>
+    // Executes this block if<br>
+    // condition is false<br>
+}<br>
+        </code>
+    </div>
+    <br>
+</div>
+{% endblock %}
